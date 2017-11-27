@@ -35,8 +35,8 @@ $(document).ready(function($){
 
 function createOrder() {
     return {
-        crust: null,
-        size: null,
+        ['crust-choice']: null,
+        ['pizza-size']: null,
         toppingsMeat: [],
         toppingsMisc: []
     };
