@@ -1,17 +1,5 @@
 "use strict";
 
-// function toggleField(elementId) {
-//     $("#" + elementId).removeClass("hidden");
-
-    // let ele = window.document.getElementById(elementId);
-    // ele.style.display = "block !important;";
-
-// }
-
-// document.getElementById("crust-choice")
-//     .addEventListener('change', function(){
-//         console.log(document.getElementById("pizza-size-container"));
-//     });
 
 $(document).ready(function($){
     let pizzaOrder = getOrder();
@@ -51,6 +39,161 @@ function getOrder() {
         ? JSON.parse(localStorage['pizza_order'])
         : createOrder();
 }
+
+
+
+let price = 0;
+let $crustChoice = $("#crust-choice");
+let $pizzaSize =  $("#pizza-size");
+
+let $pepperoniBox = $("#box-pepperoni");
+let $sausageBox = $("#box-sausage");
+let $baconBox = $("#box-bacon");
+let $chickenBox = $("#box-chicken");
+let $meatLoversBox = $("#box-meatLovers");
+
+let $peppersBananaBox = $("#box-peppersBanana");
+let $spinachBox = $("#box-spinach");
+let $olivesBlackBox = $("#box-olivesBlack");
+let $olivesGreenBox = $("#box-olivesGreen");
+let $mushroomsBox = $("#box-mushrooms");
+let $onionsBox = $("#box-onions");
+let $peppersGreenBox = $("#box-peppersGreen");
+
+
+$crustChoice.on("change", function(){
+   let price = 0;
+   price = $('option', $(this)).filter(':selected').data('price');
+
+   console.log(price);
+
+});
+
+$pizzaSize.on("change", function(){
+   price = $('option', $(this)).filter(':selected').data('price');
+
+   console.log(price);
+});
+
+$pepperoniBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$sausageBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$baconBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$chickenBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$meatLoversBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$peppersBananaBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$spinachBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$olivesBlackBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$olivesGreenBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$mushroomsBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$onionsBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+$peppersGreenBox.on("change", function(){
+   let price = 0;
+   price = $('input', $(this)).data('price');
+
+   console.log(price);
+});
+
+
+
+
+// $(document).ready(function($) {
+//     let price = 0;
+//     $("#crust-choice-container").on("change", function(event) {
+//         if ($("select#crust-choice option[value='thin']").val() === "Thin") {
+//             price = 1;
+//             console.log(price);
+//         }
+//     })
+// });
+
+
+
+
+
+
+
+
+
+
+
+// function toggleField(elementId) {
+//     $("#" + elementId).removeClass("hidden");
+
+    // let ele = window.document.getElementById(elementId);
+    // ele.style.display = "block !important;";
+
+// }
+
+// document.getElementById("crust-choice")
+//     .addEventListener('change', function(){
+//         console.log(document.getElementById("pizza-size-container"));
+//     });
 
 // function sayHello() {
 //     alert("Hello!");
