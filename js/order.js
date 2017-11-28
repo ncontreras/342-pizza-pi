@@ -62,214 +62,105 @@ let $peppersGreenBox = $("#box-peppersGreen");
 
 
 $crustChoice.on("change", function(){
-   let price = 0;
    price = $('option', $(this)).filter(':selected').data('price');
 
    console.log(price);
+   alert("Your Current Total is $" + price);
 
 });
 
 $pizzaSize.on("change", function(){
    price = $('option', $(this)).filter(':selected').data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $pepperoniBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $sausageBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $baconBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $chickenBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $meatLoversBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $peppersBananaBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $spinachBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $olivesBlackBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $olivesGreenBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $mushroomsBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $onionsBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
 $peppersGreenBox.on("change", function(){
    let price = 0;
    price = $('input', $(this)).data('price');
-
+   alert("Your Current Total is $" + price);
    console.log(price);
 });
 
-
-
-
-// $(document).ready(function($) {
-//     let price = 0;
-//     $("#crust-choice-container").on("change", function(event) {
-//         if ($("select#crust-choice option[value='thin']").val() === "Thin") {
-//             price = 1;
-//             console.log(price);
-//         }
-//     })
-// });
-
-
-
-
-
-
-
-
-
-
-
-// function toggleField(elementId) {
-//     $("#" + elementId).removeClass("hidden");
-
-    // let ele = window.document.getElementById(elementId);
-    // ele.style.display = "block !important;";
-
-// }
-
-// document.getElementById("crust-choice")
-//     .addEventListener('change', function(){
-//         console.log(document.getElementById("pizza-size-container"));
-//     });
-
-// function sayHello() {
-//     alert("Hello!");
-// }
-//
-// sayHello();
-
-// let sayHello = function(name) {
-//     alert("hello " + name);
-// };
-//
-// sayHello(sayHello);
-
-// let sum = (a, b) => {return a + b;}
-
-
-// let donnaAge = 23;
-// let donnaName = "Donna";
-// let favColor = "brown";
-//
-// let donna = {
-//     age: 23,
-//     name: "Donna",
-//     favColor: "brown",
-// };
-//
-// console.log(donna);
-//
-//
-// let i;
-// for (i = 0; i < 10; i++) {
-//
-//     console.log("i is : " + i);
-// }
-// console.log("Done iteration, i is: " + i);
-
-//
-// let obj1 = {};
-// let obj2 = {};
-// let obj3 = {};
-// let obj4 = {};
-// let obj5 = {};
-//
-// let myObjects = [
-//     28,
-//     13,
-//     "hello",
-//     'c',
-//     12.3,
-//     -18,
-//     {
-//         age: 23,
-//         name: "Donna",
-//         favColor: "brown"
-//     }
-// ];
-//
-
-// let donna = {
-//     name: "Donna",
-//     favSongGenre: 'jazz'
-// };
-
-// localStorage['donna'] = JSON.stringify(donna);
-//
-//
-// let elly = JSON.parse(localStorage['donna']);
-//
-// elly.name = "Elly";
-// console.log(elly);
-
-
-
-
-
-
-
-
-
+function current_price(price) {
+    let newPrice = price + previousPrice;
+    alert("Your Current Total is $" + newPrice);
+    let previousPrice = newPrice;
+};
